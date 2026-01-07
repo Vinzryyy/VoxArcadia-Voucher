@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>VoxArcadia | Game Voucher Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">VoxArcadia</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#popular">Populer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item">
+          <a class="btn btn-neon ms-lg-3 px-4" href="topup.html">Top-Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home">
+  <div class="container text-center">
+    <h1>Top-Up Game Cepat & Aman</h1>
+
+    <p class="lead mt-3">
+      Proses instan • Harga terbaik • Tanpa ribet
+    </p>
+
+    <!-- ===== IMAGE SLIDER ===== -->
+    <div id="heroSlider" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="./assets/X-Neon Frame.png"
+               class="d-block w-100 rounded-4"
+               alt="Game Banner 1">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/Golden Bamboo Blade.png"
+               class="d-block w-100 rounded-4"
+               alt="Game Banner 2">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/Candy Cane Thruster.png"
+               class="d-block w-100 rounded-4"
+               alt="Game Banner 3">
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-5">
+      <a href="#popular" class="btn btn-neon btn-lg px-5">Top-Up Sekarang</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= POPULAR ================= -->
+<section id="popular">
+  <div class="container">
+    <h2 class="text-center mb-5">🔥 Event Populer</h2>
+
+    <div class="row g-4">
+
+      <!-- Panda Realm -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/PandaRealm.png" class="img-fluid rounded mb-3" alt="Panda Realm Event">
+          <h5>Panda Realm</h5>
+          <p class="small">
+            <strong>Blessing of the Golden Panda</strong><br>
+            Event top up kumulatif dengan hadiah eksklusif seperti
+            <em>Golden Bamboo Blade</em> dan sayap <em>Spirit of the Forest</em>.
+          </p>
+          <span class="badge bg-success text-dark">Community Reward</span>
+            <a href="topup.html" class="btn btn-neon w-100 mt-3">
+            Top-Up Now
+            </a>
+        </div>
+        
+      </div>
+
+      <!-- Galaxy Rush -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/CyberArena.png" class="img-fluid rounded mb-3" alt="Galaxy Rush Event">
+          <h5>Galaxy Rush</h5>
+          <p class="small">
+            <strong>Sweet Skies Adventure</strong><br>
+            Dunia langit permen dengan skin pesawat permanen bertema Natal,
+            cocok untuk small spender hingga whale.
+          </p>
+          <span class="badge bg-info text-dark">Limited Theme</span>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">
+            Top-Up Now
+            </a>
+        </div>
+      </div>
+
+      <!-- Battle Zone X -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/BattleZoneX.png" class="img-fluid rounded mb-3" alt="Battle Zone X Event">
+          <h5>Battle Zone X</h5>
+          <p class="small">
+            <strong>Project X: Cyber Awakening</strong><br>
+            Recharge milestone dengan hadiah cyber futuristik
+            hingga skin mythic <em>Panda-Unit 01</em>.
+          </p>
+          <span class="badge bg-warning text-dark">Mythic Reward</span>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">
+            Top-Up Now
+            </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= GAMES ================= -->
+<section id="games">
+  <div class="container">
+    <h2 class="text-center mb-5">🎮 Games Available</h2>
+
+    <div class="row g-4 text-center">
+
+      <!-- Panda Realm -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/PandaRealm.png" class="img-fluid rounded mb-3" alt="Panda Realm">
+          <h5>Panda Realm</h5>
+          <p class="small">Fantasy RPG dengan sistem voucher & event komunitas.</p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Galaxy Rush -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/CyberArena.png" class="img-fluid rounded mb-3" alt="Galaxy Rush">
+          <h5>Galaxy Rush</h5>
+          <p class="small">Aerial sci-fi adventure dengan skin pesawat legendaris.</p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Battle Zone X -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/BattleZoneX.png" class="img-fluid rounded mb-3" alt="Battle Zone X">
+          <h5>Battle Zone X</h5>
+          <p class="small">Action shooter futuristik dengan sistem recharge milestone.</p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Froggy Overdrive -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/FroggyOverdrive.png" class="img-fluid rounded mb-3" alt="Froggy Overdrive">
+          <h5>🐸 Froggy Overdrive</h5>
+          <p class="small">
+            Arcade absurd dengan katak balap roket dan skill lompat anti-gravitasi.
+          </p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Noodle Ninja Saga -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/NoodleNinjaSaga.png" class="img-fluid rounded mb-3" alt="Noodle Ninja Saga">
+          <h5>🍜 Noodle Ninja Saga</h5>
+          <p class="small">
+            RPG komedi di mana ninja bertarung menggunakan mie instan legendaris.
+          </p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Chicken Mecha Uprising -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/ChickenMecha.png" class="img-fluid rounded mb-3" alt="Chicken Mecha Uprising">
+          <h5>🐔 Chicken Mecha Uprising</h5>
+          <p class="small">
+            Strategi futuristik: ayam raksasa menguasai dunia dengan robot tempur.
+          </p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Brain.exe Arena -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/BrainExeArena.png" class="img-fluid rounded mb-3" alt="Brain.exe Arena">
+          <h5>🧠 Brain.exe Arena</h5>
+          <p class="small">
+            Puzzle PvP absurd, kalah bukan karena skill tapi karena overthinking.
+          </p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+      <!-- Octo Office Tycoon -->
+      <div class="col-md-4">
+        <div class="game-card p-4 h-100">
+          <img src="./assets/OctoOffice.png" class="img-fluid rounded mb-3" alt="Octo Office Tycoon">
+          <h5>🐙 Octo Office Tycoon</h5>
+          <p class="small">
+            Simulator bisnis kantor… tapi semua karyawannya gurita multitasking.
+          </p>
+          <a href="topup.html" class="btn btn-neon w-100 mt-3">Top-Up Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= LOGIN ================= -->
+<section id="login">
+  <div class="container">
+    <h2 class="text-center mb-4">Login Akun</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <form class="game-card p-4">
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="email@email.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="••••••••">
+          </div>
+
+          <button type="submit" class="btn btn-neon w-100">
+            Login
+          </button>
+
+          <p class="text-center small mt-3">
+            Belum punya akun? <a href="#register">Daftar</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= REGISTER ================= -->
+<section id="register">
+  <div class="container">
+    <h2 class="text-center mb-4">Register Akun</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <form class="game-card p-4">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="email@email.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control">
+          </div>
+
+          <button type="submit" class="btn btn-neon w-100">
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <h2>About VoxArcadia</h2>
+    <p class="mt-3">
+      VoxArcadia Voucher adalah perusahaan fiksi yang menyediakan layanan penjualan voucher game digital untuk berbagai platform permainan online. Kami hadir sebagai solusi praktis bagi para gamer yang menginginkan proses top-up yang cepat, aman, dan mudah, dengan pilihan voucher yang beragam serta sistem transaksi yang terpercaya.
+    </p>
+    <p class="mt-3">
+      Dengan mengutamakan kepuasan pelanggan, VoxArcadia Voucher berkomitmen memberikan layanan berkualitas melalui sistem yang modern dan dukungan pelanggan yang responsif. Kami percaya bahwa pengalaman bermain game yang menyenangkan dimulai dari proses pembelian voucher yang sederhana, efisien, dan bebas hambatan.
+    </p>
+  </div>
+</section>
+<!-- ================= CONTACT ================= -->
+ <section id="contact">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6">
+        <div class="game-card p-4">
+          <p>Email Support:</p>
+          <strong>support@voxarcadia.com</strong>
+
+          <hr>
+
+          <p>Jam Operasional:</p>
+          <strong>24/7 Customer Support</strong>
+
+          <hr>
+
+          <p>Platform:</p>
+          <span class="badge bg-info text-dark">Website</span>
+          <span class="badge bg-success text-dark">WhatsApp</span>
+          <span class="badge bg-warning text-dark">Discord</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center p-4">
+  <p class="mb-1">© 2026 VoxArcadia</p>
+  <small>VoxArcadia Voucher Platform (Fictional Project)</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

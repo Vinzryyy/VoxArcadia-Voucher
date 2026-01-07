@@ -1,0 +1,168 @@
+/* ================= GLOBAL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0B1218;     /* Deep Navy Black */
+  color: #F0F6FC;                /* Ice White */
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: rgba(11, 18, 24, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 180, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: #0B1218;
+  box-shadow: 0 8px 25px rgba(0, 180, 255, 0.25);
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #00B4FF !important;
+  letter-spacing: 1px;
+}
+
+/* Menu */
+.navbar-nav .nav-link {
+  font-size: 1.05rem;
+  color: #F0F6FC !important;
+  margin-left: 14px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00B4FF !important;
+}
+
+/* Underline hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00B4FF, #00FFA3);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================= HERO ================= */
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at top, rgba(0,180,255,0.15), transparent 60%),
+    #0B1218;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3.2rem;
+  color: #00B4FF;
+  text-shadow: 0 0 30px rgba(0,180,255,0.5);
+}
+
+#home .lead {
+  color: #F0F6FC;
+  opacity: 0.9;
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+  font-size: 2.2rem;
+  color: #00B4FF;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #00B4FF, #00FFA3);
+  border-radius: 10px;
+}
+
+h3, h4, h5 {
+  color: #F0F6FC;
+}
+
+/* ================= CARDS ================= */
+.game-card {
+  background: linear-gradient(180deg, #0E1620, #0B1218);
+  border: 1px solid rgba(0,180,255,0.2);
+  border-radius: 16px;
+  color: #F0F6FC;
+  transition: all 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,180,255,0.35);
+  border-color: #00FFA3;
+}
+
+/* ================= BUTTONS ================= */
+.btn-neon {
+  background: linear-gradient(135deg, #00B4FF, #00FFA3);
+  border: none;
+  color: #0B1218;
+  font-weight: 600;
+  box-shadow: 0 0 25px rgba(0,180,255,0.6);
+}
+
+.btn-neon:hover {
+  box-shadow: 0 0 40px rgba(0,255,163,0.9);
+  color: #0B1218;
+}
+
+/* ================= FORMS ================= */
+.form-control {
+  background: #0E1620;
+  border: 1px solid rgba(0,180,255,0.3);
+  color: #F0F6FC;
+}
+
+.form-control::placeholder {
+  color: rgba(240,246,252,0.6);
+}
+
+.form-control:focus {
+  background: #0E1620;
+  border-color: #00FFA3;
+  box-shadow: 0 0 0 0.2rem rgba(0,255,163,0.25);
+  color: #F0F6FC;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0B1218;
+  border-top: 1px solid rgba(0,180,255,0.2);
+  color: #F0F6FC;
+}
+.game-card img {
+  max-height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
