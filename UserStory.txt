@@ -1,0 +1,15 @@
+User Story
+
+1. As a user, I want to register an account, so that I can access the top-up feature.
+
+2. As a user, I want to log in to the website, so that I can use the top-up service.
+
+3. As a user, I want to select a game from the available list, so that I can top up the correct game.
+
+4. As a user, I want to input my User ID and server, so that the top-up is sent to the correct account.
+
+5. As a user, I want to select a top-up nominal, so that I can choose how much in-game currency I buy.
+
+6. As a user, I want to see the total price of the top-up, so that I know how much I need to pay.
+
+7. As a user, I want to submit the top-up form and receive a success notification, so that I know the transaction is completed.

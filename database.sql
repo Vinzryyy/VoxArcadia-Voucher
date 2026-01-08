@@ -18,5 +18,11 @@ CREATE TABLE users (
 
 INSERT INTO users (username, email, password, role) VALUES
 ('adminvox', 'admin@voxarcadia.com', 'admin123', 'admin'),
-('player01', 'player01@gmail.com', 'password123', 'user'),
-('player02', 'player02@gmail.com', 'password123', 'user');
+('player03', 'player03@gmail.com', 'password123', 'user'),
+('player04', 'player04@gmail.com', 'password123', 'user'),
+('player05', 'player05@gmail.com', 'password123', 'user'),
+('player06', 'player06@gmail.com', 'password123', 'user'),
+('player07', 'player07@gmail.com', 'password123', 'user'),
+('moderator01', 'mod01@voxarcadia.com', 'mod123', 'admin'),
+('support01', 'support01@voxarcadia.com', 'support123', 'admin');
+
