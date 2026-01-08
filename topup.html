@@ -33,74 +33,93 @@
 </nav>
 
 <!-- ================= TOP UP ================= -->
-<section id="topup" style="padding-top:120px">
+<section style="padding-top:120px">
   <div class="container">
     <h2 class="text-center mb-5">🎮 Top-Up Game</h2>
 
     <div class="row justify-content-center">
       <div class="col-md-6">
 
-        <form class="game-card p-4" id="topupForm">
+        <form id="topupForm" class="game-card p-4">
 
           <!-- Pilih Game -->
           <div class="mb-3">
             <label class="form-label">Pilih Game</label>
-            <select class="form-select" id="gameSelect" required>
+            <select id="gameSelect" class="form-select" required>
               <option value="">-- Pilih Game --</option>
-                <option value="Panda Realm">Panda Realm</option>
-                <option value="Galaxy Rush">Galaxy Rush</option>
-                <option value="Battle Zone X">Battle Zone X</option>
-                <option value="Froggy Overdrive">Froggy Overdrive</option>
-                <option value="Noodle Ninja Saga">Noodle Ninja Saga</option>
-                <option value="Chicken Mecha Uprising">Chicken Mecha Uprising</option>
-                <option value="Brain.exe Arena">Brain.exe Arena</option>
-                <option value="Octo Office Tycoon">Octo Office Tycoon</option>
+              <option>Panda Realm</option>
+              <option>Galaxy Rush</option>
+              <option>Battle Zone X</option>
+              <option>Froggy Overdrive</option>
+              <option>Noodle Ninja Saga</option>
+              <option>Chicken Mecha Uprising</option>
+              <option>Brain.exe Arena</option>
+              <option>Octo Office Tycoon</option>
             </select>
           </div>
 
           <!-- User ID -->
           <div class="mb-3">
             <label class="form-label">User ID</label>
-            <input type="text" class="form-control" placeholder="Masukkan User ID" required>
+            <input id="userIdInput" type="text" class="form-control" placeholder="Masukkan User ID" required>
           </div>
 
           <!-- Server -->
           <div class="mb-3">
             <label class="form-label">Server</label>
-            <input type="text" class="form-control" placeholder="Contoh: Asia / NA / EU">
+            <input type="text" class="form-control" placeholder="Asia / NA / EU">
           </div>
 
-        <div class="mb-3">
-        <label class="form-label">Nominal Top-Up</label>
-        <select class="form-select" id="nominalSelect" required>
-            <option value="">-- Pilih Nominal --</option>
-            <option value="10000">100 Diamonds - Rp10.000</option>
-            <option value="20000">200 Diamonds - Rp20.000</option>
-            <option value="30000">300 Diamonds - Rp30.000</option>
-            <option value="50000">500 Diamonds - Rp50.000</option>
-            <option value="75000">750 Diamonds - Rp75.000</option>
-            <option value="100000">1.000 Diamonds - Rp100.000</option>
-            <option value="150000">1.500 Diamonds - Rp150.000</option>
-            <option value="200000">2.000 Diamonds - Rp200.000</option>
-            <option value="300000">3.000 Diamonds - Rp300.000</option>
-            <option value="500000">5.000 Diamonds - Rp500.000</option>
-            <option value="750000">7.500 Diamonds - Rp750.000</option>
-            <option value="1000000">10.000 Diamonds - Rp1.000.000</option>
-            <option value="2500000">25.000 Diamonds - Rp2.500.000</option>
-            <option value="5000000">50.000 Diamonds - Rp5.000.000</option>
-            <option value="10000000">100.000 Diamonds - Rp10.000.000</option>
-        </select>
-        </div>
+          <!-- Nominal -->
+          <div class="mb-3">
+            <label class="form-label">Nominal Top-Up</label>
+            <select id="nominalSelect" class="form-select" required>
+              <option value="">-- Pilih Nominal --</option>
+              <option value="10000">100 Diamonds - Rp10.000</option>
+              <option value="50000">500 Diamonds - Rp50.000</option>
+              <option value="100000">1.000 Diamonds - Rp100.000</option>
+              <option value="250000">2.500 Diamonds - Rp250.000</option>
+              <option value="500000">5.000 Diamonds - Rp500.000</option>
+            </select>
+          </div>
 
+          <!-- Pembayaran -->
+          <div class="mb-3">
+            <label class="form-label">Metode Pembayaran</label>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="payment" value="QRIS" required>
+              <label class="form-check-label">QRIS</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="payment" value="E-Wallet">
+              <label class="form-check-label">E-Wallet</label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="payment" value="Transfer Bank">
+              <label class="form-check-label">Transfer Bank</label>
+            </div>
+          </div>
+
+          <!-- Ringkasan -->
+          <div class="game-card p-3 mb-3">
+            <h6>🧾 Ringkasan Pesanan</h6>
+            <ul class="list-unstyled small mb-0">
+              <li>Game: <strong id="summaryGame">-</strong></li>
+              <li>User ID: <strong id="summaryUser">-</strong></li>
+              <li>Nominal: <strong id="summaryNominal">-</strong></li>
+              <li>Pembayaran: <strong id="summaryPayment">-</strong></li>
+            </ul>
+          </div>
 
           <!-- Total -->
           <div class="alert alert-info text-center">
-            Total Bayar:
-            <strong id="totalHarga">Rp 0</strong>
+            Total Bayar: <strong id="totalHarga">Rp 0</strong>
           </div>
 
-          <!-- Submit -->
-          <button type="submit" class="btn btn-neon w-100">
+          <button class="btn btn-neon w-100" type="submit">
             Proses Top-Up
           </button>
 
@@ -111,17 +130,12 @@
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer class="text-center p-4">
   <p class="mb-1">© 2026 VoxArcadia</p>
-  <small>VoxArcadia Voucher Platform (Fictional Project)</small>
+  <small>Fictional Project</small>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom JS -->
 <script src="script.js"></script>
-
 </body>
 </html>

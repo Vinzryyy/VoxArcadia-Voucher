@@ -116,7 +116,13 @@ h3, h4, h5 {
   color: #F0F6FC;
   transition: all 0.3s ease;
 }
+.game-card img {
+  transition: transform 0.4s ease;
+}
 
+.game-card:hover img {
+  transform: scale(1.08);
+}
 .game-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0,180,255,0.35);
@@ -165,4 +171,38 @@ footer {
   max-height: 180px;
   object-fit: cover;
   width: 100%;
+}
+.navbar.scrolled {
+  background: rgba(11, 18, 24, 0.98);
+  box-shadow: 0 10px 30px rgba(0,180,255,0.35);
+}
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-neon {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-neon::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -110%;
+  background: rgba(255,255,255,0.2);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.btn-neon:hover::after {
+  left: 120%;
 }
