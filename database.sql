@@ -26,3 +26,25 @@ INSERT INTO users (username, email, password, role) VALUES
 ('moderator01', 'mod01@voxarcadia.com', 'mod123', 'admin'),
 ('support01', 'support01@voxarcadia.com', 'support123', 'admin');
 
+SELECT * FROM users;
+
+
+SELECT id, username, email
+FROM users
+WHERE role = 'user';
+
+SELECT id, username, email, created_at
+FROM users
+WHERE role = 'admin';
+
+
+UPDATE users
+SET password = 'newpassword123'
+WHERE email = 'player05@gmail.com';
+
+UPDATE users
+SET username = 'player07_pro'
+WHERE id = 6;
+
+DELETE FROM users
+WHERE email = 'player06@gmail.com';
