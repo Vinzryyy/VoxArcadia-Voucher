@@ -20,4 +20,4 @@ secure, and modern top-up services for online games.
 - Bootstrap 5
 
 ## Deployment
-- GitHub Pages
+- Netlify.app
