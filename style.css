@@ -206,3 +206,110 @@ footer {
 .btn-neon:hover::after {
   left: 120%;
 }
+/* ================= RESPONSIVE ================= */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+
+  section {
+    padding: 80px 0;
+  }
+
+  #home h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .game-card {
+    margin-bottom: 24px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  #home {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  #home h1 {
+    font-size: 2.1rem;
+  }
+
+  #home .lead {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .game-card {
+    border-radius: 14px;
+  }
+
+  .game-card img {
+    max-height: 160px;
+  }
+
+  .btn-neon {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+
+  #home h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .btn-neon {
+    font-size: 0.9rem;
+  }
+}
